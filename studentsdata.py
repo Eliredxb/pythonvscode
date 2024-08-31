@@ -1,6 +1,6 @@
 import streamlit as st #helps us to create a page for are python app
 import pandas as pd #helps us to read csvfiles create dataframe/tables
-import plotly.express as px #helps us to plot charts in python
+import plotly.express as px #helps us to plot charts in python.
 
 firsttable = pd.read_csv("studentsdata.csv")
 
