@@ -63,8 +63,6 @@ if menu == "Submit scores":
       st.error(f"{name} Your total score is: {total} average is: {average} grade is: {grade}")
     
     studentdict ={"Name":[name],"Year":[year],"Math":[math],"English":[english],"Computer":[computer],"Art":[art],"Science":[science],"Total":[total],"Average":[average],"Grade":[grade],}
-    # st.write(studentdict)
     secondtable = pd.DataFrame(studentdict)
-    # st.table(secondtable)
     tablesjoin = pd.concat([firsttable,secondtable],ignore_index=True)
     tablesjoin.to_csv("studentsdata.csv",index = False)  
